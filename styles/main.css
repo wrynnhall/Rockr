@@ -1,0 +1,395 @@
+/*Tablet landscape & Desktop layouts (960px or more)*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clear_float{
+  clear: both;
+}
+
+html{
+  background-color: white;
+  font-size: 100%;
+}
+
+body{
+  /*Sets the relative font size so measurments can be in 'em' later in the document*/
+  font-size: 100%;
+  font-family: 'Roboto',sans-serif;
+  width: 100%;
+  line-height: 1.15;
+}
+
+
+/*Override stupid bootstrap.css header styles*/
+.h1, h1{
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  line-height:1.15;
+  font-family: 'Righteous',cursive;
+}
+
+.h2, h2{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  line-height:1.15;
+  font-family: 'Righteous',cursive;
+}
+
+.h3, h3{
+  font-size: 1.17em;
+  font-weight: bold;
+  margin: 0;
+  line-height:1.15;
+  font-family: 'Righteous',cursive;
+}
+
+.h4, h4{
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  line-height:1.15;
+  font-family: 'Righteous',cursive;
+}
+
+.h5, h5{
+  font-size: .83em;
+  font-weight: bold;
+  margin: 0;
+  line-height:1.15;
+  font-family: 'Righteous',cursive;
+}
+
+.h6, h6{
+  font-size: .67em;
+  font-weight: bold;
+  margin: 0;
+  line-height:1.15;
+  font-family: 'Righteous',cursive;
+}
+/*Done overriding*/
+
+
+
+header{
+  background-color: black;
+  width: 100%;
+  height: 100px;
+}
+
+header img{
+  float: left;
+}
+
+header h2{
+  float: left;
+  color: white;
+  font-family: 'Righteous',cursive;
+  margin-top: 50px;
+  line-height: 1.5;
+}
+
+.artist-of-the-day{
+  float: right;
+  width: 33%;
+}
+
+.artist-of-the-day h4,
+.artist-of-the-day h5{
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.artist-of-the-day h4{
+  padding-top: 30px;
+}
+
+#mobile-menu{
+  display: none;
+}
+
+nav.nav-menu{
+  background-color: purple;
+  margin: 0;
+  padding: 0;
+  height: 52px;
+  margin-bottom: 35px;
+}
+
+nav.nav-menu ul{
+  height: 100%;
+  padding: 2px 0px;
+  margin-left: 235px;
+}
+
+nav.nav-menu ul li{
+  border: 1px solid white;
+  border-bottom: none;
+  border-top: none;
+  float: left;
+  list-style: none;
+  padding: 0 20px;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Righteous',cursive;
+  color: white;
+}
+
+main{
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+main .news-link h1{
+  background-color: purple;
+  color: white;
+  float: left;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 20px;
+  padding-left: 5px;
+  margin-top: 50px;
+  position: absolute;
+}
+
+main .news-link img{
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+main a h2{
+  float: left;
+  width: 90%;
+  font-size: 2.5em;
+  text-align: left;
+  margin-left: 5px;
+  padding-left:1px;
+  border-bottom: 1px solid black;
+}
+
+.section-lists{
+  margin-top: 50px;
+  width: 100%;
+}
+
+.section-lists section h3{
+  color: purple;
+  font-weight: normal;
+}
+
+.one-column{
+  height: 100%;
+  min-height: 410px;
+  margin-left: 20px;
+  width: 300px;
+  padding-left: 0;
+}
+
+.column-text{
+  padding-left: 10px;
+}
+
+.column-text ul{
+    min-height: 150px;
+    height: 100%;
+}
+
+.chart-update-header{
+  width: 295px;
+  height: 200px;
+  background-image: url('../images/chart_update.jpg');
+  background-size: cover;
+}
+
+.chart-update-text li{
+  text-indent: 20px;
+  padding: 5px 0;
+  border-left: 2px solid black;
+}
+
+.todays-top-50-header{
+  width: 295px;
+  height: 200px;
+  background-image: url('../images/top50.jpg');
+  background-size: cover;
+}
+
+.todays-top-50-text li{
+  margin-left: 20px;
+  text-indent: 5px;
+  padding: 5px 0;
+  border-left: 1px solid black;
+  list-style: decimal-leading-zero;
+}
+
+.rock-spotlight-header{
+  width: 295px;
+  height: 200px;
+  background-image: url('../images/spotlight.jpg');
+  background-size: cover;
+}
+
+.rock-spotlight-text li{
+  margin-left: 20px;
+  list-style-type: disc;
+  padding: 5px 0;
+}
+
+.rock-spotlight-text ul{
+  height: 129px;
+}
+
+.column-header-text{
+  float: left;
+  background-color: purple;
+  color: white;
+  margin-top: 60px;
+  font-size: 1.5em;
+  text-align: center;
+  opacity: 0.65;
+}
+
+footer{
+  color: white;
+  background-color: black;
+  text-align: center;
+  margin-top: 15px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+footer p{
+  text-align: left;
+  margin-top: 10px;
+}
+
+.footer-image{
+  max-width: 85%;
+}
+
+a{
+  color:purple;
+}
+
+nav a{
+  color: white;
+}
+
+nav a:link{
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li:hover{
+  border: 2px solid white;
+}
+
+nav a:visited{
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+nav a:active{
+  text-decoration: none;
+  color: white;
+}
+
+a.news-link:link{
+  text-decoration: none;
+  color: black;
+}
+
+a.news-link:visited{
+  text-decoration: none;
+  color: black;
+}
+
+a.news-link:hover{
+  text-decoration: underline;
+  color: purple;
+}
+
+a.news-link:active{
+  text-decoration: none;
+  color: black;
+}
+
+
+@media(max-width: 959px){
+
+  .artist-of-the-day{
+    display: none;
+  }
+
+}
+
+
+@media(max-width: 767px){
+
+  header h2{
+    display: none;
+  }
+
+  nav.nav-menu ul{
+  margin-left: 8px;
+  }
+
+}
+
+
+/*mobile portrait layout (480px or less)*/
+@media(max-width: 480px){
+
+  #mobile-menu{
+    display: block;
+  }
+
+  .slicknav_nav ul{
+    margin: 0;
+  }
+
+  .nav-menu{
+    display: none;
+  }
+
+  .slicknav_menu{
+    background-color: black;
+    float: right;
+    margin-top: 0px;
+  }
+
+  .slicknav_txtnode{
+    border: 0px;
+    text-align: center;
+    padding: 0 0px;
+    font-size: 1.3em;
+    color: white;
+    font-family: 'Righteous',cursive;
+  }
+
+  main{
+    margin-top: 60px;
+  }
+
+  nav ul li:hover{
+    border: 0px solid black;
+  }
+
+  .slicknav_nav a:hover {
+    background-color: purple;
+    border-radius: 0px;
+  }
+  
+}

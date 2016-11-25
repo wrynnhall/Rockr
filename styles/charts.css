@@ -1,0 +1,142 @@
+
+main{
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+.chart-header{
+  text-align: center;
+  background-color: purple;
+  color: white;
+}
+
+.button-group{
+  margin-left: 20px;
+  text-align: center;
+}
+
+
+
+.button-group button{
+  font-size: 1.5em;
+  font-weight: bold;
+  display: inline-block;
+  margin: 5px 0;
+  cursor: pointer;
+  border: none;
+  border-left: 1px solid black;
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.button-group button:hover{
+  background-color: purple;
+  color: white;
+}
+
+.button-group button:focus{
+  background-color: purple;
+  color: white;
+}
+
+main article{
+  display: none;
+}
+
+/*Only chart to be visible when the page loads*/
+main article.page-load-chart{
+  display: block;
+}
+
+.all-charts{
+  margin: 20px 0;
+}
+
+.chart h2, .chart h3{
+  display: inline-block;
+  background-color: purple;
+  color: white;
+  padding: 0 5px;
+}
+
+.chart h3{
+  font-weight: normal;
+}
+
+div.chart ol li{
+  list-style: decimal-leading-zero;
+  list-style-position: inside;
+  margin: 10px 0;
+  padding: 0 5px;
+  width: 65%;
+  clear: both;
+}
+
+li img{
+  border: 3px solid purple;
+  float: right;
+}
+
+.artist{
+  color: purple;
+  font-weight: bold;
+}
+
+main aside{
+  border-left: 1px solid black;
+  margin-top: 30px;
+}
+
+aside h2{
+  text-align: center;
+  font-size: 200%;
+  color: purple;
+  background-color: purple;
+  color: white;
+}
+
+.news{
+  border-bottom: 1px solid black;
+  padding: 10px 10px;
+}
+
+.news a:link{
+  color: black;
+}
+
+.news a:hover{
+  text-decoration: none;
+  color: purple;
+}
+
+.last-news{
+  border-bottom: none;
+}
+
+.news-image{
+  width: 100%;
+  height: auto;
+}
+
+.row{
+  margin-left: -1px;
+}
+
+
+@media(max-width: 480px){
+
+  main{
+    margin-top: 80px;
+  }
+
+}
+
+
+@media(max-width: 767px){
+
+  .news{
+    border-bottom: none;
+  }
+  
+}

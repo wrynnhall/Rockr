@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Zachary Hall">
+    <meta name="description" content="The most legit rock site on the web, bringing you the latest deets about all your favorite artists">
+    <title>Rockr | Where the Legends Come to Rock!</title>
+
+    <script src="javascript/jquery-3.1.1.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/jquery.slicknav.js" charset="utf-8"></script>
+    <script src="javascript/rockr-nav.js"></script>
+    <script src="javascript/charts.js"></script>
+
+    <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles/slicknav.css" media="screen" title="no title">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link href="styles/charts.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+    <body>
+      <header>
+
+        <a href="index.html">
+          <img src="images/logo.png" alt="Site Logo" height="100">
+          <h2>Where legends come to Rock</h2>
+        </a>
+
+        <div class="artist-of-the-day">
+          <h4>ARTIST OF THE DAY:</h4>
+          <h5>Bruce Springstein</h5>
+        </div>
+
+        <nav id="mobile-menu">
+        </nav>
+
+        <div class="clear_float">
+        </div>
+
+      </header>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="charts.html">Charts</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </nav>
+
+      <main class="row">
+
+        <div class="column col-sm-10">
+
+          <div class="chart-header">
+            <h1>ROCKR'S TOP 10 CHART COLLECTION</h1>
+          </div>
+
+          <div class="button-group">
+
+            <button type="button" onclick="show_hide_button('classic-chart')" autofocus>Classic Top10</button>
+            <button type="button" onclick="show_hide_button('80s-chart')">80's Top10</button>
+            <button type="button" onclick="show_hide_button('90s-chart')">90's Top10</button>
+            <button type="button" onclick="show_hide_button('00s-chart')">00's Top10</button>
+            <button type="button" onclick="show_hide_button('hard-rock-chart')">Hard Rock Top10</button>
+            <button type="button" onclick="show_hide_button('rockr-chart')" style="border-right:1px solid black;">Rockr's Top10 All-Time</button>
+
+          </div>
+
+          <article class="row all-charts page-load-chart" id="classic-chart">
+
+            <div class="column col-xs-2">
+            </div>
+
+            <div class="column col-xs-8 chart">
+              <h2>Classic Top10 Chart</h2>
+
+              <div style="display:block;">
+              </div>
+
+              <h3>The greatest music from a time long ago...</h3>
+
+              <ol>
+                <li>Sweet Emotion | <span class="artist">Aerosmith</span><img src="images/chart/classic/a.jpg" alt="Aerosmith" height="100"></li>
+                <li>Kashmir | <span class="artist">Led Zeppelin</span><img src="images/chart/classic/lz.jpg" alt="Led Zeppelin" height="100"></li>
+                <li>Gimme Shelter | <span class="artist">Rolling Stones</span><img src="images/chart/classic/rs.jpg" alt="Rolling Stones" height="100"></li>
+                <li>Back In Black | <span class="artist">AC/DC</span><img src="images/chart/classic/acdc.jpg" alt="AC/DC" height="100"></li>
+                <li>A Day in the Life | <span class="artist">The Beatles</span><img src="images/chart/classic/b.jpg" alt="The Beatles" height="100"></li>
+                <li>All Along the Watchtower | <span class="artist">Jimi Hendrix</span><img src="images/chart/classic/jh.jpg" alt="Jimi Hendrix" height="100"></li>
+                <li>Bohemian Rhapsody | <span class="artist">Queen</span><img src="images/chart/classic/q.jpg" alt="Queen" height="100"></li>
+                <li>Everybody Wants Some!! | <span class="artist">Van Halen</span><img src="images/chart/classic/vh.jpg" alt="Van Halen" height="100"></li>
+                <li>Comfortably Numb | <span class="artist">Pink Floyd</span><img src="images/chart/classic/pf.jpg" alt="Pink Floyd" height="100"></li>
+                <li>Paranoid | <span class="artist">Black Sabbath</span><img src="images/chart/classic/bs.jpg" alt="Black Sabbath" height="100"></li>
+              </ol>
+
+            </div>
+
+            <div class="column col-xs-2">
+            </div>
+
+          </article>
+
+          <article class="row all-charts" id="80s-chart">
+
+            <div class="column col-xs-2">
+            </div>
+
+            <div class="column col-xs-8 chart">
+
+              <h2>80's Top10 Chart</h2>
+
+              <div style="display:block;">
+              </div>
+
+              <h3>When the A-Team was playin, these songs were ROCKIN!</h3>
+
+              <ol>
+                <li>Home Sweet Home | <span class="artist">Motley Crue</span><img src="images/chart/80/mc.jpg" alt="Motley Crue" height="100"></li>
+                <li>Every Rose Has Its Thorn | <span class="artist">Poison</span><img src="images/chart/80/p.jpg" alt="Poison" height="100"></li>
+                <li>Faithfully | <span class="artist">Journey</span><img src="images/chart/80/j.jpg" alt="Journey" height="100"></li>
+                <li>I Remember You | <span class="artist">Skid Row</span><img src="images/chart/80/sr.jpg" alt="Skid Row" height="100"></li>
+                <li>Don't Know What You Got (Till It's Gone) | <span class="artist">Cinderella</span><img src="images/chart/80/c.jpg" alt="Cinderella" height="100"></li>
+                <li>Heaven | <span class="artist">Warrant</span><img src="images/chart/80/w.jpeg" alt="Warrant" height="100"></li>
+                <li>Never Say Goodbye | <span class="artist">Bon Jovi</span><img src="images/chart/80/bj.jpg" alt="Bon Jovi" height="100"></li>
+                <li>Love Bites | <span class="artist">Def Leppard</span><img src="images/chart/80/dl.jpg" alt="Def Leppard" height="100"></li>
+                <li>Love Song | <span class="artist">Tesla</span><img src="images/chart/80/t.jpg" alt="Tesla" height="100"></li>
+                <li>Patience | <span class="artist">Guns N' Roses</span><img src="images/chart/80/gnr.jpg" alt="Guns N' Roses" height="100"></li>
+              </ol>
+
+            </div>
+
+            <div class="column col-xs-2">
+            </div>
+
+          </article>
+
+          <article class="row all-charts" id="90s-chart">
+
+            <div class="column col-xs-2">
+            </div>
+
+            <div class="column col-xs-8 chart">
+
+              <h2>90's Top10 Chart</h2>
+
+              <div style="display:block;">
+              </div>
+
+              <h3>Remember 90's? Us, too!</h3>
+
+              <ol>
+                <li>Smells Like Teen Spirit | <span class="artist">Nirvana</span><img src="images/chart/90/n.jpg" alt="Nirvana" height="100"></li>
+                <li>November Rain | <span class="artist">Guns N' Roses</span><img src="images/chart/90/gnr.jpg" alt="Guns N' Roses" height="100"></li>
+                <li>Enter Sandman | <span class="artist">Metallica</span><img src="images/chart/90/m.jpg" alt="Metallica" height="100"></li>
+                <li>Black Hole Sun | <span class="artist">Soundgarden</span><img src="images/chart/90/sg.jpg" alt="Soundgarden" height="100"></li>
+                <li>Everlong | <span class="artist">Foo Fighters</span><img src="images/chart/90/ff.jpg" alt="Foo Fighters" height="100"></li>
+                <li>Basket Case | <span class="artist">Green Day</span><img src="images/chart/90/gd.jpg" alt="Green Day" height="100"></li>
+                <li>Man in the Box | <span class="artist">Alice In Chains</span><img src="images/chart/90/aic.jpg" alt="Alice In Chains" height="100"></li>
+                <li>The Show Must Go On | <span class="artist">Queen</span><img src="images/chart/90/q.jpg" alt="Queen" height="100"></li>
+                <li>Under the Bridge | <span class="artist">Red Hot Chili Peppers</span><img src="images/chart/90/rhcp.jpg" alt="Red Hot Chili Peppers" height="100"></li>
+                <li>Black | <span class="artist">Pearl Jam</span><img src="images/chart/90/pj.jpg" alt="Pearl Jam" height="100"></li>
+              </ol>
+
+            </div>
+
+            <div class="column col-xs-2">
+            </div>
+
+          </article>
+
+          <article class="row all-charts" id="00s-chart">
+
+            <div class="column col-xs-2">
+            </div>
+
+            <div class="column col-xs-8 chart">
+              <h2>00's Top10 Chart</h2>
+
+              <div style="display:block;">
+              </div>
+
+              <h3>The best millenials had to offer...</h3>
+
+              <ol>
+                <li>Seven Nation Army | <span class="artist">The White Stripes</span><img src="images/chart/00/tws.jpg" alt="The White Stripes" height="100"></li>
+                <li>Float On | <span class="artist">Modest Mouse</span><img src="images/chart/00/mm.jpg" alt="Modest Mouse" height="100"></li>
+                <li>Clocks | <span class="artist">Coldplay</span><img src="images/chart/00/c.jpg" alt="Coldplay" height="100"></li>
+                <li>Take Me Out | <span class="artist">Franz Ferdinand</span><img src="images/chart/00/ff.jpg" alt="Franz Ferdinand" height="100"></li>
+                <li>Boulevard of Broken Dreams | <span class="artist">Green Day</span><img src="images/chart/00/gd.jpg" alt="Green Day" height="100"></li>
+                <li>All My Friends | <span class="artist">LCD Soundsystem</span><img src="images/chart/00/lcds.jpg" alt="LCD Soundsystem" height="100"></li>
+                <li>Mr. Brightside | <span class="artist">The Killers</span><img src="images/chart/00/tk.jpg" alt="The Killers" height="100"></li>
+                <li>Beautiful Day | <span class="artist">U2</span><img src="images/chart/00/u2.jpg" alt="U2" height="100"></li>
+                <li>Maps | <span class="artist">Yeah Yeah Yeahs</span><img src="images/chart/00/yyy.jpg" alt="Yeah Yeah Yeahs" height="100"></li>
+                <li>Losing My Edge | <span class="artist">LCD Soundsystem</span><img src="images/chart/00/lcds.jpg" alt="LCD Soundsystem" height="100"></li>
+              </ol>
+
+            </div>
+
+            <div class="column col-xs-2">
+            </div>
+
+          </article>
+
+          <article class="row all-charts" id="hard-rock-chart">
+
+            <div class="column col-xs-2">
+            </div>
+
+            <div class="column col-xs-8 chart">
+              <h2>Hard Rock Top10 Chart</h2>
+
+              <div style="display:block;">
+              </div>
+
+              <h3>Headbangers welcome</h3>
+
+              <ol>
+                <li>Master of Puppets | <span class="artist">Metallica</span><img src="images/chart/hard/m.jpg" alt="Metallica" height="100"></li>
+                <li>Hallowed Be Thy Name | <span class="artist">Iron Maiden</span><img src="images/chart/hard/im.jpg" alt="Iron Maiden" height="100"></li>
+                <li>Holy Wars... | <span class="artist">Megadeth</span><img src="images/chart/hard/md.jpg" alt="Megadeth" height="100"></li>
+                <li>One | <span class="artist">Metallica</span><img src="images/chart/hard/m.jpg" alt="Metallica" height="100"></li>
+                <li>The Trooper | <span class="artist">Iron Maiden</span><img src="images/chart/hard/im.jpg" alt="Iron Maiden" height="100"></li>
+                <li>Painkiller | <span class="artist">Judas Priest</span><img src="images/chart/hard/jp.jpg" alt="Judas Priest" height="100"></li>
+                <li>Paranoid | <span class="artist">Black Sabbath</span><img src="images/chart/hard/bs.jpg" alt="Black Sabbath" height="100"></li>
+                <li>Iron Man | <span class="artist">Black Sabbath</span><img src="images/chart/hard/bs.jpg" alt="Black Sabbath" height="100"></li>
+                <li>Enter Sandman | <span class="artist">Metallica</span><img src="images/chart/hard/m.jpg" alt="Metallica" height="100"></li>
+                <li>Chop Suey | <span class="artist">System of a Down</span><img src="images/chart/hard/soad.jpg" alt="System of a Down" height="100"></li>
+              </ol>
+
+            </div>
+
+            <div class="column col-xs-2">
+            </div>
+
+          </article>
+
+          <article class="row all-charts" id="rockr-chart">
+
+            <div class="column col-xs-2">
+            </div>
+
+            <div class="column col-xs-8 chart">
+              <h2>Rockr's Top10 Chart</h2>
+
+              <div style="display:block;">
+              </div>
+
+              <h3>That's just like, our opinion man...</h3>
+
+              <ol>
+                <li>Back In Black | <span class="artist">AC/DC</span><img src="images/chart/rockr/acdc.jpg" alt="AC/DC" height="100"></li>
+                <li>Livin On a Prayer | <span class="artist">Bon Jovi</span><img src="images/chart/rockr/bj.jpg" alt="Bon Jovi" height="100"></li>
+                <li>Sweet Child O' Mine | <span class="artist">Guns N' Roses</span><img src="images/chart/rockr/gnr.jpg" alt="Guns N' Roses" height="100"></li>
+                <li>Fade To Black | <span class="artist">Metallica</span><img src="images/chart/rockr/m.jpg" alt="Metallica" height="100"></li>
+                <li>Bohemian Rhapsody | <span class="artist">Queen</span><img src="images/chart/rockr/q.jpg" alt="Queen" height="100"></li>
+                <li>Stairway to Heaven | <span class="artist">Led Zeppelin</span><img src="images/chart/rockr/lz.jpg" alt="Led Zeppelin" height="100"></li>
+                <li>Welcome to the Jungle | <span class="artist">Guns N' Roses</span><img src="images/chart/rockr/gnr.jpg" alt="Guns N' Roses" height="100"></li>
+                <li>Born to be Wild | <span class="artist">Steppenwolf</span><img src="images/chart/rockr/s.jpg" alt="Steppenwolf" height="100"></li>
+                <li>Second Heartbeat | <span class="artist">Avenged Sevenfold</span><img src="images/chart/rockr/as.jpg" alt="Avenged Sevenfold" height="100"></li>
+                <li>Iron Man | <span class="artist">Black Sabbath</span><img src="images/chart/rockr/bs.jpg" alt="Black Sabbath" height="100"></li>
+              </ol>
+
+            </div>
+
+            <div class="column col-xs-2">
+            </div>
+
+          </article>
+
+        </div>
+
+        <aside class="column col-sm-2">
+
+          <h2>Latest News</h2>
+
+          <div class="row">
+            <div class="column col-xs-4 col-sm-12 news">
+
+              <a href="http://loudwire.com/slayer-reign-in-blood-album-anniversary/">
+                <h3>30th anniversary of the release of Slayer's "Reign in Blood" album</h3>
+                <img src="images/chart/news/SlayerROB_album.jpg" alt="Slayer Reign of Blood Album" class="news-image">
+              </a>
+
+            </div>
+            <div class="column col-xs-4 col-sm-12 news">
+
+              <a href="https://www.youtube.com/watch?v=4tdKl-gTpZg">
+                <h3>[New Release] Metallica - Moth Into Flame</h3>
+                <img src="images/chart/news/metallica_MIF.jpg" alt="Slayer Reign of Blood Album" class="news-image">
+              </a>
+
+            </div>
+
+            <div class="column col-xs-4 col-sm-12 news last-news">
+
+              <a href="http://loudwire.com/avenged-sevenfold-the-stage-album-review/">
+                <h3>New Avenged Sevenfold Album!</h3>
+                <img src="images/chart/news/avengedsevenfold.jpg" alt="Slayer Reign of Blood Album" class="news-image">
+              </a>
+
+            </div>
+          </div>
+
+        </aside>
+
+      </main>
+
+      <footer>
+        <h3>Your Local Station:</h3>
+        <a href="http://www.rock108.com"><img class="footer-image" src="images/local_radio.png" alt="Local Radio Station"></a>
+        <p>
+          Created by <a href="http://halldev.me/">Zachary Hall</a> &#169; 2016
+        </p>
+      </footer>
+
+  </body>
+
+</html>
